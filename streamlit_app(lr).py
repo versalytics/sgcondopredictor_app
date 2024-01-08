@@ -102,7 +102,7 @@ relevant_postal_codes = property_postal_mapping[property_postal_mapping['Project
 selected_postal_code = st.selectbox("Select Postal Code", relevant_postal_codes)
 
 # Input for Area
-area = st.number_input("Enter Area (SQFT)", min_value=0)
+area = st.number_input("Enter Area (SQFT)", min_value=100)
 
 # Slider for Year
 year = st.slider("Select Year", 2024, 2027)

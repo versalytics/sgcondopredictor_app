@@ -19,7 +19,7 @@ def load_preprocessor(preprocessor_file_path):
     return joblib.load(preprocessor_file_path)
 
 # Load your preprocessor
-preprocessor = load_preprocessor(r'C:\Users\angxi\OneDrive\Documents\Condo Data Project\Machine Learning\preprocessor.joblib')
+preprocessor = load_preprocessor('preprocessor.joblib')
 
 
 # In[23]:
@@ -54,7 +54,7 @@ def load_model(pickle_file_path):
 
 
 # Load your preprocessor and model
-preprocessor = load_preprocessor(r'C:\Users\angxi\OneDrive\Documents\Condo Data Project\Machine Learning\preprocessor.joblib')
+preprocessor = load_preprocessor('preprocessor.joblib')
 lr_model = load_model(r'C:\Users\angxi\linear_regression_model 0124(ml).pkl')
 
 

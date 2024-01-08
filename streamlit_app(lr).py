@@ -43,7 +43,7 @@ def transform_input(project_name, postal_code, area, year, month):
 # In[24]:
 
 
-pickle_file_path = r'C:\Users\angxi\linear_regression_model 0124(ml).pkl'
+pickle_file_path = 'linear_regression_model_0124 (ml).pkl'
 
 def load_model(pickle_file_path):
     with open(pickle_file_path, 'rb') as file:
@@ -55,7 +55,7 @@ def load_model(pickle_file_path):
 
 # Load your preprocessor and model
 preprocessor = load_preprocessor('preprocessor.joblib')
-lr_model = load_model(r'C:\Users\angxi\linear_regression_model 0124(ml).pkl')
+lr_model = load_model('linear_regression_model_0124 (ml).pkl')
 
 
 # In[26]:
@@ -64,7 +64,7 @@ lr_model = load_model(r'C:\Users\angxi\linear_regression_model 0124(ml).pkl')
 import pandas as pd
 
 # Load the mapping file
-file_path = r'C:\Users\angxi\OneDrive\Documents\Condo Data Project\Machine Learning\Streamlit App\project_to_postal_mapping.csv'
+file_path = 'project_to_postal_mapping.csv'
 project_to_postal_df = pd.read_csv(file_path)
 
 # Display the first few rows to understand its structure
@@ -83,13 +83,13 @@ def load_model(pickle_file_path):
         return pickle.load(file)
 
 # Load your Linear Regression model
-lr_model = load_model(r'C:\Users\angxi\linear_regression_model 0124(ml).pkl')
+lr_model = load_model('linear_regression_model_0124 (ml).pkl')
 
 # Streamlit UI components
 st.title("Singapore Condo Price Predictor")
 
 # Load the property-postal code mapping DataFrame
-property_postal_mapping = pd.read_csv(r'C:\Users\angxi\OneDrive\Documents\Condo Data Project\Machine Learning\Streamlit App\project_to_postal_mapping.csv')
+property_postal_mapping = pd.read_csv('project_to_postal_mapping.csv')
 
 # Convert the 'Postal Code' column back to lists of strings
 property_postal_mapping['Postal Code'] = property_postal_mapping['Postal Code'].apply(lambda x: x.strip("[]").replace("'", "").split(", "))

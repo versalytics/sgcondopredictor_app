@@ -108,7 +108,7 @@ area = st.number_input("Enter Area (SQFT)", min_value=100)
 year = st.slider("Select Year", 2024, 2027)
 
 # Dropdown for Month
-month = st.selectbox("Select Month", list(range(1, 13)))
+month = st.selectbox("Select Month (Jan=1, Feb=2,...Dec=12", list(range(1, 13)))
 
 # Predict Button and prediction logic
 if st.button("Predict"):

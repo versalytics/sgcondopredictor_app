@@ -90,7 +90,7 @@ st.title("Singapore Condo Price Predictor")
 
 # Additional line with website name and link
 st.markdown("""
-    [Visit our website for more insights!](https://versalyticssg.wixsite.com/versalytics)
+    [By Versalytics.sg, visit our website for more insights!](https://versalyticssg.wixsite.com/versalytics)
 """, unsafe_allow_html=True)
 
 # Load the property-postal code mapping DataFrame

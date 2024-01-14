@@ -88,6 +88,11 @@ lr_model = load_model('linear_regression_model_0124 (ml).pkl')
 # Streamlit UI components
 st.title("Singapore Condo Price Predictor")
 
+# Additional line with website name and link
+st.markdown("""
+    [Visit our website for more insights!](https://versalyticssg.wixsite.com/versalytics)
+""", unsafe_allow_html=True)
+
 # Load the property-postal code mapping DataFrame
 property_postal_mapping = pd.read_csv('project_to_postal_mapping.csv')
 

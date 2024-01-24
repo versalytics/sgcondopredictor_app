@@ -1,1 +1,1 @@
-"Head over to https://versalyticssg.wixsite.com/versalytics/machinelearning for the full description!"
+Head over to https://versalyticssg.wixsite.com/versalytics/machinelearning for the full description!
